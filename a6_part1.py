@@ -26,9 +26,9 @@ def load_and_explore_data(filename):
         pandas DataFrame containing the data
     """
     # TODO: Load the CSV file using pandas
-    
+    data = pd.read_csv(filename)
     # TODO: Print the first 5 rows
-    
+    print("Student scores")
     # TODO: Print the shape of the dataset (number of rows and columns)
     
     # TODO: Print basic statistics (mean, min, max, etc.)
@@ -45,10 +45,10 @@ def create_scatter_plot(data):
         data: pandas DataFrame with Hours and Scores columns
     """
     # TODO: Create a figure with size (10, 6)
-    
+    plt.figure(figsize=[10, 6])
     # TODO: Create a scatter plot with Hours on x-axis and Scores on y-axis
     #       Use color='purple' and alpha=0.6
-    
+    plt.scatter(data['Hours'], data['score'])
     # TODO: Add x-axis label: 'Hours Studied'
     
     # TODO: Add y-axis label: 'Test Score'
@@ -97,9 +97,9 @@ def train_model(X_train, y_train):
         trained LinearRegression model
     """
     # TODO: Create a LinearRegression model
-    
+    model = LinearRegression()
     # TODO: Train the model using .fit()
-    
+    model.fit(X_train,y_train)
     # TODO: Print the coefficient (slope) and intercept
     
     # TODO: Return the trained model
@@ -119,9 +119,11 @@ def evaluate_model(model, X_test, y_test):
         predictions array
     """
     # TODO: Make predictions using the model
-    
+    predictions = model.predict(X_test)
     # TODO: Calculate R² score using r2_score()
     
+    mse = mean_squared_error(y_test, predictions)
+    rmse = np.sqrt(mse)
     # TODO: Calculate Mean Squared Error using mean_squared_error()
     
     # TODO: Calculate Root Mean Squared Error (square root of MSE)
@@ -194,11 +196,10 @@ if __name__ == "__main__":
     print("=" * 70)
     
     # Step 1: Load and explore the data
-    # TODO: Call load_and_explore_data() with 'student_scores.csv'
-    
+    data = load_and_explore_data('student_scores.csv')
     # Step 2: Visualize the relationship
     # TODO: Call create_scatter_plot() with the data
-    
+    create_scatter_plot(data)
     # Step 3: Split the data
     # TODO: Call split_data() and store the returned values
     
