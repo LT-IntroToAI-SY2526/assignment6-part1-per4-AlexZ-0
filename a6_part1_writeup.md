@@ -11,7 +11,7 @@
 What does the R² score tell you about your model? What does it mean if R² is close to 1? What if it's close to 0?
 
 **YOUR ANSWER:**
-
+It tells you how accirate a model is.The closer R1 is to 1, the more accurate the predictions are, and closer to 0 mean less accurate
 
 
 
@@ -21,7 +21,7 @@ What does the R² score tell you about your model? What does it mean if R² is c
 What does the MSE (Mean Squared Error) mean in plain English? Why do you think we square the errors instead of just taking the average of the errors?
 
 **YOUR ANSWER:**
-
+How far the models predictions are form the actail test. Squaring the errore make helps make large mistake more noticable 
 
 
 
@@ -33,7 +33,7 @@ Would you trust this model to predict a score for a student who studied 10 hours
 - What happens when you make predictions outside the range of your training data?
 
 **YOUR ANSWER:**
-
+I wouldn't really trust the model as the maximum hours is 9.6. When making predictions outside the range it may become less accurate
 
 
 
