@@ -48,7 +48,7 @@ Looking at your scatter plot, describe the relationship between hours studied an
 - Positive or negative?
 
 **YOUR ANSWER:**
-
+Strong, linear, and positve as hours increase so do the scores
 
 
 
@@ -58,9 +58,9 @@ Looking at your scatter plot, describe the relationship between hours studied an
 What are some real-world factors that could affect test scores that this model doesn't account for? List at least 3 factors.
 
 **YOUR ANSWER:**
-1. 
-2. 
-3. 
+1. Diffivulty of test
+2. Lack of sleep and affect studying
+3. Stress
 
 
 ---
@@ -71,7 +71,7 @@ What are some real-world factors that could affect test scores that this model d
 Why do we split our data into training and testing sets? What would happen if we trained and tested on the same data?
 
 **YOUR ANSWER:**
-
+So we can see how well the model does on new data. It would be very accrate but it would just be memorizing the data
 
 
 
@@ -81,7 +81,7 @@ Why do we split our data into training and testing sets? What would happen if we
 What was the most challenging part of this assignment for you? How did you overcome it (or what help do you still need)?
 
 **YOUR ANSWER:**
-
+Understanding how the data and model evaluation worked. 
 
 
 
